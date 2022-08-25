@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto bold';
+  src: url(fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto italic';
+  src: url(fonts/Roboto-ThinItalic.ttf);
+}
+
+:root {
+  --primary-background-color: #1f2937;
+  --primary-light-text-color: #f9faf8;
+  --secondary-text-color: #e5e7eb;
+  --custom-blue-color: #3882f6;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar style */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  background-color: var(--primary-background-color);
+  padding: 0 7em;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--primary-light-text-color);
+}
+
+.nav-links {
+  margin: 28.08px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--secondary-text-color);
+}
+
+.nav-links a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.nav-links a:hover {
+  cursor: pointer;
+}
+
+/* First section with website name */
+
+.header-section {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 7em 7em 7em;
+}
+
+.header-section h2 {
+  margin: 0%;
+  font-family: 'Roboto bold', sans-serif;
+  font-size: 48px;
+  color: var(--primary-light-text-color);
+}
+
+.header-section p {
+  font-size: 18px;
+  color: var(--secondary-text-color);
+}
+
+#title {
+  flex: 4;
+  margin-right: 2em;
+}
+
+#image {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: var(--secondary-text-color);
+}
+
+.header-section button {
+  background-color: var(--custom-blue-color);
+  border-radius: 0.5em;
+  border: none;
+  padding: 0.3em 2em;
+  color: var(--secondary-text-color);
+}
+
+/* Info section */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information h3 {
+  font-family: 'Roboto bold', sans-serif;
+  font-size: 36px;
+  color: var(--primary-background-color);
+}
+
+.information-options {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 0.1em; */
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0em 1em 0.1em;
+}
+
+.img-placeholder {
+  border: 2.5px solid #3882f6;
+  border-radius: 0.5em;
+  width: 10em;
+  height: 10em;
+  color: #ffff;
+}
+
+#card p {
+  margin: 0.5em;
+  padding: 0.1em 1.5em;
+  text-align: justify;
+  text-align-last: center;
+  width: 10em;
+  font-size: 16px;
+}
+
+/* Quote section */
+
+.quote-section {
+  background-color: var(--secondary-text-color);
+  margin-top: 5em;
+  padding-bottom: 6em;
+}
+
+.quote-section p {
+  font-family: 'Roboto italic', sans-serif;
+  font-size: 36px;
+  color: var(--primary-background-color);
+  padding: 4.5em 6.7em 0em 6.7em;
+  margin-bottom: 0;
+}
+
+#quote-author-name {
+  text-align: right;
+  padding-top: 0;
+  margin-right: 9em;
+  font-size: 18px;
+  font-family: 'Roboto bold', sans-serif;
+}
+
+/* Call to action section */
+
+.action-call-section {
+  margin: 5em 7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--custom-blue-color);
+  color: var(--secondary-text-color);
+  border-radius: 0.5em;
+  padding: 2em 10em;
+}
+
+#call {
+  flex: 5;
+}
+#call h4 {
+  margin-bottom: 0;
+  font-size: 23px;
+}
+
+#call p {
+  margin-top: 0.5em;
+}
+
+#sign-up-button {
+  flex: 1;
+}
+
+#sign-up-button button {
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 2px solid var(--secondary-text-color);
+  padding: 0.3em 2em;
+  margin-top: 3em;
+}
+
+/* Footer style */
+
+footer {
+  background-color: var(--primary-background-color);
+  text-align: center;
+  padding: 1.5em 0;
+  color: var(--secondary-text-color);
+}
