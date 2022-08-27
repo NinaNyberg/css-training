@@ -259,6 +259,8 @@ footer {
   color: var(--secondary-text-color);
 }
 
+/* About page */
+
 .about {
   display: flex;
   flex-direction: column;
@@ -272,6 +274,32 @@ footer {
 
 .about p {
   margin-bottom: 2em;
+}
+
+/* Contact page */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.contact-form input {
+  margin: 1em 0;
+}
+
+.contact-form textarea {
+  margin-bottom: 1em;
+}
+
+.contact-form button {
+  background-color: var(--custom-blue-color);
+  border-radius: 0.5em;
+  border: none;
+  padding: 0.3em 2em;
+  color: var(--secondary-text-color);
 }
 
 @media (max-width: 600px) {
