@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Awesome website</title>
   </head>
   <body>
-      <nav>
-        <div class="logo"><h3>Header Logo</h3></div>
-        <a href="#" class="toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="nav-links">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">New quotes</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </div>
-      </nav>
-     <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><h3>Header Logo</h3></a>
+      </div>
+      <a href="#" class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">New quotes</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
       <div class="header-section">
         <div id="title">
           <h2>Smart quotes by politicians</h2>
@@ -33,51 +35,51 @@
           </p>
           <button>Sign up</button>
         </div>
-        <div id="image">
+        <aside id="image">
           <span>This is a placeholder for an image</span>
           <!-- <img
             src="/images/finnish-president.jpg"
             alt="picture-of-finnish-president"
           /> -->
-        </div>
+        </aside>
       </div>
     </header>
     <main>
-    <section class="information">
-      <h3>Open and learn more!</h3>
-      <div class="information-options">
-        <div id="card">
-          <div class="img-placeholder">image</div>
-          <p>Presidents</p>
+      <section class="information">
+        <h3>Open and learn more!</h3>
+        <article class="information-options">
+          <figure id="card">
+            <div class="img-placeholder">image</div>
+            <figcaption>Presidents</figcaption>
+          </figure>
+          <figure id="card">
+            <div class="img-placeholder">image</div>
+            <figcaption>Prime ministers</figcaption>
+          </figure>
+          <figure id="card">
+            <div class="img-placeholder">image</div>
+            <figcaption>Other politicians</figcaption>
+          </figure>
+          <figure id="card">
+            <div class="img-placeholder">image</div>
+            <figcaption>Other public figures</figcaption>
+          </figure>
+        </article>
+      </section>
+      <section class="quote-section">
+        <blockquote>
+          Darkness does not disappear on its own. If we want the course of
+          events to alter, we have to take action.
+        </blockquote>
+        <p id="quote-author-name">- Finnish President</p>
+      </section>
+      <section class="action-call-section">
+        <div id="call">
+          <h4>Help us to discover more quotes!</h4>
+          <p>Sign up by clicking that button right over there!</p>
         </div>
-        <div id="card">
-          <div class="img-placeholder">image</div>
-          <p>Prime ministers</p>
-        </div>
-        <div id="card">
-          <div class="img-placeholder">image</div>
-          <p>Other politicians</p>
-        </div>
-        <div id="card">
-          <div class="img-placeholder">image</div>
-          <p>Other public figures</p>
-        </div>
-      </div>
-    </section>
-    <section class="quote-section">
-      <p>
-        Darkness does not disappear on its own. If we want the course of events
-        to alter, we have to take action.
-      </p>
-      <p id="quote-author-name">- Finnish President</p>
-    </section>
-    <section class="action-call-section">
-      <div id="call">
-        <h4>Help us to discover more quotes!</h4>
-        <p>Sign up by clicking that button right over there!</p>
-      </div>
-      <div id="sign-up-button"><button>Sign up</button></div>
-    </section>
+        <div id="sign-up-button"><button>Sign up</button></div>
+      </section>
     </main>
     <footer><small>Copyright &copy;</small></footer>
     <script src="index.js"></script>

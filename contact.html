@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Awesome website</title>
   </head>
   <body>
-      <nav>
-        <div class="logo"><h3>Header Logo</h3></div>
-        <a href="#" class="toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="nav-links">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">New quotes</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </div>
-      </nav>
-    <div>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><h3>Header Logo</h3></a>
+      </div>
+      <a href="#" class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">New quotes</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="contact-section">
+      <h4>Contact</h4>
       <form class="contact-form">
         <label for="email">E-mail</label>
-        <input type="email" id="email" />
-        <textarea></textarea>
+        <input type="email" id="email" placeholder="Your e-mail" />
+        <textarea placeholder="Your message here"></textarea>
         <button>Send</button>
       </form>
-    </div>
+    </section>
     <footer><small>Copyright &copy;</small></footer>
   </body>
 </html>
