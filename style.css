@@ -20,9 +20,13 @@
   --custom-blue-color: #3882f6;
 }
 
+html {
+  scroll-padding-top: 5.6em;
+}
+
 body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 5.6em auto;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -103,7 +107,7 @@ nav {
   background-color: var(--primary-background-color);
   display: flex;
   justify-content: space-between;
-  padding: 8em 5em 7em 7em;
+  padding: 3em 5em 7em 7em;
 }
 
 .header-section h2 {
@@ -272,6 +276,10 @@ footer {
   align-items: center;
 }
 
+.about h3 {
+  margin-top: 2em;
+}
+
 .about img {
   margin: 2em 0;
 }
@@ -287,6 +295,7 @@ footer {
 .contact-section h4 {
   text-align: center;
   margin-bottom: 0em;
+  margin-top: 7em;
 }
 
 .contact-form {
@@ -353,11 +362,13 @@ footer {
 
   .nav-links li {
     text-align: center;
+    margin-right: 0em;
+    margin-bottom: 0.5em;
   }
 
-  .nav-links li:last-child {
-    margin-right: 1em;
-    margin-bottom: 0.5em;
+  .nav-links li:not(:last-child) {
+    margin-right: 0rem;
+    /* margin-bottom: 0.5em; */
   }
 
   /* .nav-links li:hover {
@@ -423,6 +434,14 @@ footer {
 }
 
 @media (max-width: 400px) {
+  html {
+    scroll-padding-top: 0em;
+  }
+
+  body {
+    margin: 0;
+  }
+
   nav {
     position: static;
     width: 100%;
@@ -507,7 +526,8 @@ footer {
   /* About page */
 
   .about h3 {
-    margin-bottom: 0em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
   }
 
   .about img {
@@ -516,6 +536,10 @@ footer {
   }
 
   /* Contact page */
+
+  .contact-section h4 {
+    margin-top: 1em;
+  }
 
   .contact-form input {
     width: 90%;
