@@ -127,10 +127,10 @@ nav {
   color: var(--secondary-text-color);
 }
 
-#image img {
+/* #image img {
   object-fit: cover;
-  width: 40em;
-}
+  
+} */
 
 .header-section button {
   background-color: var(--custom-blue-color);
