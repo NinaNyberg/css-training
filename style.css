@@ -71,7 +71,7 @@ nav {
 }
 
 .nav-links li:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   /* margin-bottom: 0.5em; */
 }
 
@@ -103,7 +103,7 @@ nav {
   background-color: var(--primary-background-color);
   display: flex;
   justify-content: space-between;
-  padding: 5em 7em 7em 7em;
+  padding: 8em 5em 7em 7em;
 }
 
 .header-section h2 {
@@ -426,10 +426,12 @@ footer {
   nav {
     position: static;
     width: 100%;
+    padding: 0em;
   }
 
   .logo {
     font-size: 18px;
+    padding-left: 1em;
   }
 
   .toggle {
